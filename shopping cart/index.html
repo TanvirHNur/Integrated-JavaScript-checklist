@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c0779e35be.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+  <header class="p-5">
+    <h1 class="justify-content-center fs-1 d-flex m-5">Welcome to DailyDeals</h1>
+  </header>
+  <main>
+    <section class="container carts col-md-12 col-lg-10 mx-auto">
+      <div class="container p-5 ">
+        <div class="row bg-white m-5 item">
+          <div class="col-md-7">
+            <h3 class="text-center m-3 col-md-12">Products</h3>
+            <div class=" d-flex align-items-center mb-2">
+              <img class="img-fluid" src="images/images-2.jpg" alt="">
+            <h4 class="ms-3">Caviar gold-crusted iPhone 11 Pro model</h4>
+            </div>
+        </div>  
+        <div class="col-md-5 d-flex align-items-center justify-content-center align-content-center">
+          <div class="input-group number-spinner center-text">
+            <button id="phone-minus" class="btn ms-2"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+            <input id="phone-input" class="input-text ms-2" type="number" name="" id="" value="1">
+            <button id="phone-plus" class="btn"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+          </div>
+          <h4>$<span id="phone-price">1219</span></h4>
+        </div>
+      </div>
+        <div class="row bg-white m-5 item">
+          <div class="col-md-7">
+            <h3 class="text-center m-3">Products</h3>
+            <div class=" d-flex align-items-center cart-img mb-2">
+              <img class="img-fluid" src="images/case.jpg" alt="">
+            <h4 class="ms-3">Caviar gold-crusted iPhone 11 Pro model</h4>
+            </div>
+        </div>  
+        <div class="col-md-5 d-flex align-items-center justify-content-center align-content-center">
+          <div class="input-group number-spinner center-text">
+            <button id="case-minus" class="btn ms-2"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+            <input id="case-input" class="input-text ms-2" type="number" name="" id="" value="1">
+            <button id="case-plus" class="btn"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+          </div>
+          <h4>$<span id="case-price">59</span></h4>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="container p-5 carts mt-5">
+      <div class="m-5 bg-white p-3">
+      <div class="sub-total d-flex justify-content-between">
+        <h4>Sub-total</h4>
+        <h4>$<span id="sub-total">1268</span></h4>
+      </div>
+      <div class="tax d-flex justify-content-between">
+        <h4>Tax</h4>
+        <h4>$<span id="tax">
+          127.8</span></h4>
+      </div>
+      <div class="total d-flex justify-content-between">
+        <h4>Total</h4>
+        <h4>$<span id="total">1268</span></h4>
+      </div>
+      <button class="btn btn-defult btn-warning float-end" onclick="alert('Hey rich dude, donate the money amoung the needy people?')">Check Out</button>
+      <br>
+      <br>
+    </div>
+    </section>
+  </main>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
